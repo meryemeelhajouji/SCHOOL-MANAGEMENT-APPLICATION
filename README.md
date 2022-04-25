@@ -2,10 +2,10 @@
 
 #### 1 - PROJECT DESCRIPTION
 
-     This Project ( School Management Application ) is designed to help institutions offering education to manage their
-     school's daily administrative and academic operations form a remote location The software will enable paperless and
-     signficantly smoother management of processes like admission. The application will play The role of school data
-     management by allowing The admin to perform CRUD operations.
+     This Project ( School Management Application ) is designed to help institutions offering education to
+     manage their school's daily administrative and academic operations form a remote location The software
+     will enable paperless and signficantly smoother management of processes like admission. The application
+     will play The role of school data management by allowing The admin to perform CRUD operations.
 
 #### 2 - THE FEATURES OF SCHOOL MANAGEMENT APLICATION :
 
@@ -58,4 +58,5 @@
 
      3 - 6 - Research Part :
 
-             An admin can perform specific searches on all students, teachers and parents registered in the system via dashboard
+             An admin can perform specific searches on all students, teachers and parents registered in the
+             system via dashboard
