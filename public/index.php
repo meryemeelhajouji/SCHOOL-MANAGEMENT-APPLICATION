@@ -1,0 +1,1 @@
+<?php // Require "require.php" file
