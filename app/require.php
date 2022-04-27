@@ -1,1 +1,1 @@
-<?php // Require libraries from The libraries folder
+<?php // Require all libraries and necessary files That our application needs

@@ -1,6 +1,6 @@
 <?php
 
-// Create The class Controller
+// The Controller Class = Helps To load models and views from other controllers
 
 class Controller
 {

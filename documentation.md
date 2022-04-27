@@ -1,8 +1,8 @@
-## BUILDING SCHOOL MANAGEMENT APPLICATION USING PHP-MYSQL ( OPP - PDO - MVC)
+### BUILDING SCHOOL MANAGEMENT APPLICATION USING PHP - MYSQL ( OPP - PDO - MVC)
 
 ### 1 - BUILDING CUSTOM MVC FRAMEWORK
 
-        1 - PUBLIC
+        1 - PUBLIC = The Frontend of our Application
 
               - css
               - js
@@ -10,19 +10,19 @@
               - index.php => The Application starting file
               - .htaccess => Redirect non-existing URLs To public/index.php
 
-        2 - APP
+        2 - APP = The MVC Structure of our Application
 
             2 - 1 - libraries
 
-                    - Core.php       => Load The current controller based on The URL
-                    - Controller.php =>
-                    - Database.php   =>
+                    - Core.php       => Look at The URL and decided what controller or method should be loaded
+                    - Controller.php =>  Helps To load models and views from other controllers
+                    - Database.php   => Contains methods to connect and perform CRUD operations on The database
 
             2 - 2 - controllers
             2 - 3 - models
             2 - 4 - views
-            2 - 5 - config
-            2 - 6 - require.php
+            2 - 5 - config => Contains database parametres
+            2 - 6 - require.php => Require all libraries and necessary files That our application needs
             2 - 7 - .htaccess  => Prevent users To access The app directory
 
         3 - .htacces => Get rid of "public" in The URL

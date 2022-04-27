@@ -1,0 +1,2 @@
+<?php
+// Add database parametres
