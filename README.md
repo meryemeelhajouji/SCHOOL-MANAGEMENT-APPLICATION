@@ -1,4 +1,4 @@
-## SCHOOL MANAGEMENT APPLICATION ( PHP - OOP - MVC )
+## SCHOOL MANAGEMENT APPLICATION ( PHP - OOP - PDO - MVC )
 
 #### 1 - PROJECT DESCRIPTION
 
@@ -16,7 +16,7 @@
 
      2 - 3 - ADMIN can creates parents  ( Matriculation - Full Name - Gender - Job - Address - Phone )
 
-     2 - 3 - ADMIN can creates administrators ( Matriculation - First Name - Last Name - Role - Password )
+     2 - 4 - ADMIN can creates administrators ( Matriculation - First Name - Last Name - Role - Password )
 
 #### 3 - USER STORIES :
 
