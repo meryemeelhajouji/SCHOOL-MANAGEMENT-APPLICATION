@@ -1,7 +1,7 @@
 ## SCHOOL MANAGEMENT APPLICATION ( PHP - OOP - PDO - MVC )
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+<a href = "https://github.com/touzaelhassan/SCHOOL-MANAGEMENT-APPLICATION/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = touzaelhassan/SCHOOL-MANAGEMENT-APPLICATION"/>
 </a>
 
 Made with [contributors-img](https://contrib.rocks).
