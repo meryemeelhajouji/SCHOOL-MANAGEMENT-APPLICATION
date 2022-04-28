@@ -1,5 +1,11 @@
 ## SCHOOL MANAGEMENT APPLICATION ( PHP - OOP - PDO - MVC )
 
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
+
 #### 1 - PROJECT DESCRIPTION
 
      This Project ( School Management Application ) is designed to help institutions offering education to
