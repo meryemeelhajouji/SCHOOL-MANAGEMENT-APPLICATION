@@ -1,10 +1,6 @@
 ## SCHOOL MANAGEMENT APPLICATION ( PHP - OOP - PDO - MVC )
 
-<a href = "https://github.com/touzaelhassan/SCHOOL-MANAGEMENT-APPLICATION/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = touzaelhassan/SCHOOL-MANAGEMENT-APPLICATION"/>
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
+![1](https://user-images.githubusercontent.com/59705964/165865935-06d14b8e-fd34-493d-9abe-848e29e2d6db.PNG)
 
 #### 1 - PROJECT DESCRIPTION
 
