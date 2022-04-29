@@ -33,10 +33,10 @@
 
 #### 3 - THE FEATURES OF SCHOOL MANAGEMENT APLICATION :
 
-3 - 1 - Admin can creates students
-3 - 2 - Admin can creates teachers
-3 - 3 - Admin can creates parents
-4 - 4 - Admin can creates administrators
+- 3 - 1 - Admin can creates students
+- 3 - 2 - Admin can creates teachers
+- 3 - 3 - Admin can creates parents
+- 4 - 4 - Admin can creates administrators
 
 #### 4 - USER STORIES :
 
