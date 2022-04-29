@@ -33,73 +33,40 @@
 
 #### 3 - THE FEATURES OF SCHOOL MANAGEMENT APLICATION :
 
-3 - 1 - ADMIN can creates students
-
-- Matriculation
-- Full Name
-- Gender
-- Class
-- Parents
-- Address
-- Birthday
-- Email
-- Parents's Name
-
-3 - 2 - ADMIN can creates teachers
-
-- Matriculation
-- Full Name
-- Gender
-- Class
-- Subject
-- Phone
-
-3 - 3 - ADMIN can creates parents
-
-- Matriculation
-- Full Name
-- Gender
-- Job
-- Address
-- Phone
-
-4 - 4 - ADMIN can creates administrators
-
-- Matriculation
-- First Name
-- Last Name
-- Role
-- Password
+3 - 1 - Admin can creates students
+3 - 2 - Admin can creates teachers
+3 - 3 - Admin can creates parents
+4 - 4 - Admin can creates administrators
 
 #### 4 - USER STORIES :
 
 - 4 - 1 - Students Part :
 
-  - ADMIN can read student data via dashboard
-  - ADMIN can add student data via dashboard
-  - ADMIN can update student data via dashboard
-  - ADMIN can delete student data via dashboard
+  - Admin can read student data via dashboard
+  - Admin can add student data via dashboard
+  - Admin can update student data via dashboard
+  - Admin can delete student data via dashboard
 
 - 4 - 2 - Teachers Part :
 
-  - ADMIN can read teachers data via dashboard
-  - ADMIN can add teachers data via dashboard
-  - ADMIN can update teachers data via dashboard
-  - ADMIN can delete teachers data via dashboard
+  - Admin can read teachers data via dashboard
+  - Admin can add teachers data via dashboard
+  - Admin can update teachers data via dashboard
+  - Admin can delete teachers data via dashboard
 
 - 4 - 3 - Parents Part :
 
-  - ADMIN can read parent data via dashboard
-  - ADMIN can add parent data via dashboard
-  - ADMIN can update parent data via dashboard
-  - ADMIN can delete parent data via dashboard
+  - Admin can read parent data via dashboard
+  - Admin can add parent data via dashboard
+  - Admin can update parent data via dashboard
+  - Admin can delete parent data via dashboard
 
 - 4 - 4 - Administrators Part :
 
-  - ADMIN can read administrator data via dashboard
-  - ADMIN can add administrator data via dashboard
-  - ADMIN can update administrator data via dashboard
-  - ADMIN can delete administrator data via dashboard
+  - Admin can read administrator data via dashboard
+  - Admin can add administrator data via dashboard
+  - Admin can update administrator data via dashboard
+  - Admin can delete administrator data via dashboard
 
 - 4 - 5 - Statistics Part :
 
