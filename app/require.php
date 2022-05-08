@@ -1,1 +1,3 @@
-<?php // Require all libraries and necessary files That our application needs
+<?php require_once 'libraries/Database.php'; ?>
+<?php require_once 'libraries/Controller.php'; ?>
+<?php require_once 'libraries/Core.php'; ?>
