@@ -1,1 +1,2 @@
-<?php // Require "require.php" file
+<?php require_once '../app/require.php'; ?>
+<?php $init = new Core(); ?>

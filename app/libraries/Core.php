@@ -1,22 +1,49 @@
 
 <?php
 
-// The Core Class =  Look at The URL and decide what controller and method should be loaded
-//  Example :
-// The URL FORMAT = www.application.com/controller/method/params = www.application.com/users/update/1
-// The Core class load The users controller and call The update method to update user with id = 1 
-
 class Core
 {
+  protected $currentController = "Home";
+  protected $currentMethod = "index";
+  protected $params = [];
 
-  // 1 - Class Properties
+  public function __construct()
+  {
+    $url = $this->get_url();
 
-  # Current Controller
-  # Current Method
-  # Params
+    if ($url != NULL) {
 
-  // 2 - Class Constructor ( Call The get_url method and decide what Controller should be loaded  )
+      $controller_name = ucwords($url[0]);
 
-  // 3 - get_url method ( Fetch The URL parameters and put them into an array )
+      if (file_exists("../app/controllers/$controller_name.php")) {
+        $this->currentController = $controller_name;
+        unset($url[0]);
+      }
+    }
 
+    require_once "../app/controllers/$this->currentController.php";
+
+    $this->currentController = new $this->currentController;
+
+    if (isset($url[1])) {
+      if (method_exists($this->currentController, $url[1])) {
+        $this->currentMethod = $url[1];
+        unset($url[1]);
+      }
+    }
+
+    $this->params = $url ? array_values($url) : [];
+    call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
+  }
+
+  public function get_url()
+  {
+    if (isset($_GET["url"])) {
+      $url = $_GET['url'];
+      $url = rtrim($_GET['url'], '/');
+      $url = filter_var($url, FILTER_SANITIZE_URL);
+      $url = explode('/', $url);
+      return $url;
+    }
+  }
 }
