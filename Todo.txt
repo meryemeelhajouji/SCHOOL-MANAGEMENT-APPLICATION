@@ -1,0 +1,18 @@
+# The Database Tables
+
+# The Core class
+
+# The Parent Controller class
+
+# The Database class
+
+# The Frontend HomePage route : www.application.com/   =>  The Home controller  =>  The HomePage view ( Login Form )
+
+# The Dashboard root route    : www.application.com/dashboard   =>  The Dashboard controller  =>  The Dashboard view
+
+# The Parents routes
+
+- www.application.com/parents/create     =>  ParentsController@create  =>  ParentModel->create()
+- www.application.com/parents            =>  ParentsController@index   =>  ParentModel->get_parents()  =>  parents.index ( view )
+- www.application.com/parents/update/id  =>  ParentsController@update  =>  ParentModel->update()
+- www.application.com/parents/delete/id  =>  ParentsController@delete  =>  ParentModel->delete()
