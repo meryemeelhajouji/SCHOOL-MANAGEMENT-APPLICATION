@@ -1,1 +1,0 @@
-<?php // Require all libraries and necessary files That our application needs
