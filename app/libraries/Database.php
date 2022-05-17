@@ -19,6 +19,22 @@ class Database
 
   // 1 - Prepare Query Method
 
+  public function prepare($sql){
+    $this->stmt=$this->connection->prepare($sql);
+  }
+
+  public function execute (){
+    $this->stmt=$this->stmt ->execute();
+  }
+
+  public function getAll(){
+    $this->stmt=$this->stmt->fetchAll(PDO::FETCH_OBJ);
+  }
+
+  public function getOne(){
+    $this->stmt= $this->stmt-> fetch(PDO::FETCH_OBJ);
+  }
+  
   // 2 - Execute Query Method
 
   // 3 - Get All Results Method
