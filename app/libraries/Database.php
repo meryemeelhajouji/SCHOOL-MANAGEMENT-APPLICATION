@@ -8,6 +8,7 @@ class Database
 
   private $connection;
   private $stmt;
+  
 
   public function __construct()
   {
@@ -15,13 +16,22 @@ class Database
     $this->connection = new PDO($dsn, $this->db_user, $this->db_password);
   }
 
-  // Todo::@Agra
+ 
+  public function prepare ($sql){
+    $this->stmt=$this->connection->prepare($sql);
+  }
+  
 
-  // 1 - Prepare Query Method
+  public function executeO ($stmt){
+    $this->stmt=$this->stmt->execute();
+  }
+  
 
-  // 2 - Execute Query Method
-
-  // 3 - Get All Results Method
-
-  // 4 - Get Single Result Method
+  public function getAll ($stmt){
+    $this->stmt=$this->stmt->fetchAll(PDO::FETCH_OBJ);
+  }
+ 
+  public function getOne ($stmt){
+    $this->stmt=$this->stmt->fetch(PDO::FETCH_OBJ);
+  }
 }
