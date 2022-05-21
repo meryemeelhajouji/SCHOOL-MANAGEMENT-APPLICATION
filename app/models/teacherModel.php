@@ -31,11 +31,16 @@ class teacherModel
   
   }
 
-  public function update_parent()
+ 
+
+  public function delete_Teacher($id)
   {
+    $this->db->prepare("DELETE FROM teachers WHERE teacher_id = :id");
+    $this->db->bind(':id', $id);
+    $this->db->execute();
   }
 
-  public function delete_parent()
+   public function update_parent()
   {
   }
 }

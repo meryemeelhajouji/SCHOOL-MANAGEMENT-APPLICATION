@@ -43,14 +43,24 @@ class Teachers extends Controller
       $this->view('teachers/add', $data);
    
   }
+  
+  public function delete()
+  {
+            if(isset($_GET['id'])){
+              $id = $_GET['id'];
+              $teachers = $this->teachertModel->delete_Teacher($id);
+
+              header('location: ../Home.php');
+        }else{
+            echo"error";
+        }
+    
+  }
 
   public function update()
   {
     echo "The Delete Method";
   }
 
-  public function delete()
-  {
-    echo "The Delete Method";
-  }
+
 }

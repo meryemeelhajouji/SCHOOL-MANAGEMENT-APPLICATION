@@ -14,11 +14,13 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#id</th>
+      
       <th scope="col">nom</th>
       <th scope="col">gender</th>
       <th scope="col">subject</th>
       <th scope="col">phone</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -28,7 +30,10 @@
   <td class="card-title"><?php echo $teachers->teacher_gender; ?></td>
   <td class="card-title"><?php echo $teachers->teacher_subject	; ?></td>
   <td class="card-title"><?php echo $teachers->	teacher_phone; ?></td>
-  </tr>
+  <td><a href="./teachers/delete/?id=<?=$teachers->	teacher_id; ?>">delete</a></td>
+  <td><a href="./modifier/?id=<?=$teachers->	teacher_id;  ?>">modifier</a></td>
+ 
+</tr>
 <?php endforeach; ?>
   </tbody>
 </table>
