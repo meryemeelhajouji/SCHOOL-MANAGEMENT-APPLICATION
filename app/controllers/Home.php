@@ -1,9 +1,15 @@
 <?php
 
-class Home
+class Home  extends Controller
 {
   public function index()
   {
-    echo "The Home Page";
+    
+    $data = [
+      'title' => 'home page',
+     
+    ];
+    $this->view('index', $data);
   }
+
 }
