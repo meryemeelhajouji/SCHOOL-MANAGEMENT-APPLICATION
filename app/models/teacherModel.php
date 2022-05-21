@@ -5,6 +5,7 @@
 class teacherModel
 {
   private $db;
+ public $stat;
 
   public function __construct()
   {
@@ -18,11 +19,14 @@ class teacherModel
     return $this->db->getAll();
   }
 
-  public function insertTeacher($teacher)
+  public function insertTeacher($teacher, $gender, $subject, $phone)
   {
-   
-    $this->stat =  $this->db->prepare("INSERT INTO teachers (teacher_name) VALUES (:teacher)");
-      $this->db->stat->bindParam(':teacher', $teacher);
+    
+    $this->stat =  $this->db->prepare("INSERT INTO teachers(teacher_name, teacher_gender, teacher_subject, teacher_phone)  VALUES (:teacher, :gender, :subject, :phone)");
+      $this->db->bind(':teacher', $teacher);
+      $this->db->bind(':gender', $gender);
+      $this->db->bind(':subject', $subject);
+      $this->db->bind(':phone', $phone);
       $this->db->execute();
   
   }

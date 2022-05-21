@@ -20,6 +20,10 @@ class Database
   public function prepare($sql){
     $this->stmt=$this->connection->prepare($sql);
   }
+  function bind($param, $value) {
+    $this->stmt->bindParam($param, $value);
+  }
+  
 
   public function execute(){
     return $this->stmt->execute();

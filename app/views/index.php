@@ -9,7 +9,6 @@
 <body>
     <h1> Home page</h1>
     <a href="./teachers"> teachers </a><br>
-    <a href="./teachers/add"> ass </a>
-
+ 
 </body>
 </html>

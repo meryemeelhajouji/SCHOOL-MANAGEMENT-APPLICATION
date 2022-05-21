@@ -32,7 +32,7 @@
 <?php endforeach; ?>
   </tbody>
 </table>
-<a href="./addTeacher.php">
+<a href="./add/">
   <button class="btn btn-info" >new teacher</button>
 </a>
 

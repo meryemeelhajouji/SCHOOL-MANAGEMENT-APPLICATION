@@ -14,6 +14,7 @@ class Teachers extends Controller
     $teachers = $this->teachertModel->get_teachers();
 
     $data = [
+       'title' => 'List teacher',
       'teachers' => $teachers
     ];
 
@@ -23,19 +24,22 @@ class Teachers extends Controller
 
   public function add()
   {
-      $model = $this->model('TeacherModel');
-      
+          
       if(isset($_POST['submit'])) {
-        $teacher = $_POST['teacher'];
-        $this->teachertModel->insertTeacher($teacher);
-        header('location: ../index.php');
+        $nom = $_POST['nom'];
+        $gender = $_POST['gender'];
+        $subject = $_POST['subject'];
+        $phone = $_POST['phone'];
+
+        $this->teachertModel->insertTeacher($nom, $gender, $subject, $phone);
+     
       }
 
       $data = [
         'title' => 'add a teacher'
       ];
-
-      $this->view('add', $data);
+ 
+      $this->view('teachers/add', $data);
    
   }
 
