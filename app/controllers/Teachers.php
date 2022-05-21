@@ -32,7 +32,8 @@ class Teachers extends Controller
         $phone = $_POST['phone'];
 
         $this->teachertModel->insertTeacher($nom, $gender, $subject, $phone);
-     
+        header('location: ../Home.php');
+      
       }
 
       $data = [
