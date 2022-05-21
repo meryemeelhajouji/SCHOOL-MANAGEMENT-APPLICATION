@@ -30,8 +30,8 @@
   <td class="card-title"><?php echo $teachers->teacher_gender; ?></td>
   <td class="card-title"><?php echo $teachers->teacher_subject	; ?></td>
   <td class="card-title"><?php echo $teachers->	teacher_phone; ?></td>
-  <td><a href="./teachers/delete/?id=<?=$teachers->	teacher_id; ?>">delete</a></td>
-  <td><a href="./modifier/?id=<?=$teachers->	teacher_id;  ?>">modifier</a></td>
+  <td><a href="./teachers/delete/<?=$teachers->	teacher_id; ?>">delete</a></td>
+  <td><a href="./modifier/<?=$teachers->	teacher_id;  ?>">modifier</a></td>
  
 </tr>
 <?php endforeach; ?>

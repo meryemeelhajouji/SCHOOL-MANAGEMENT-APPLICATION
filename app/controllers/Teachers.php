@@ -8,7 +8,6 @@ class Teachers extends Controller
     $this->teachertModel = $this->model('teacherModel');
   }
 
-
   public function index()
   {
     $teachers = $this->teachertModel->get_teachers();
@@ -44,16 +43,15 @@ class Teachers extends Controller
    
   }
   
-  public function delete()
+  public function delete($id)
   {
-            if(isset($_GET['id'])){
-              $id = $_GET['id'];
-              $teachers = $this->teachertModel->delete_Teacher($id);
+           
+              
+    
+           $this->teachertModel->delete_Teacher($id);
 
-              header('location: ../Home.php');
-        }else{
-            echo"error";
-        }
+               header('location: ../Home.php');
+       
     
   }
 
